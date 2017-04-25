@@ -40,7 +40,7 @@ function installRepositories
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  4 suse-42.2-python
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  4 suse-42.2-network
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  5 suse-42.2-building
-  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-appliances
+  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.1-appliances
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-containers
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-filesystems-ceph
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-electronics
