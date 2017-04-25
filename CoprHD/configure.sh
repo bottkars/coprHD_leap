@@ -22,12 +22,12 @@ function installRepositories
          --no-gpgcheck http://download.opensuse.org/repositories/network:/utilities/openSUSE_Leap_42.2 suse-42.2-network
   zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.2-building \
          --no-gpgcheck http://download.opensuse.org/repositories/devel:/tools:/building/openSUSE_Leap_42.2 suse-42.2-building
-  zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.2-appliances \
-         --no-gpgcheck http://download.opensuse.org/repositories/Virtualization:/Appliances/openSUSE_Leap_42.2 suse-42.2-appliances
+  zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.1-appliances \
+         --no-gpgcheck http://download.opensuse.org/repositories/Virtualization:/Appliances/openSUSE_Leap_42.1 suse-42.1-appliances
   zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.2-containers \
          --no-gpgcheck http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_42.2 suse-42.2-containers
-  zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.1-filesystems-ceph \
-         --no-gpgcheck http://download.opensuse.org/repositories/filesystems:/ceph/openSUSE_Leap_42.1 suse-42.1-filesystems-ceph
+  zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.2-filesystems-ceph \
+         --no-gpgcheck http://download.opensuse.org/repositories/filesystems:/ceph/openSUSE_Leap_42.2 suse-42.2-filesystems-ceph
   zypper --non-interactive --no-gpg-checks addrepo --no-check --name suse-42.2-electronics \
          --no-gpgcheck http://download.opensuse.org/repositories/electronics/openSUSE_Leap_42.2 suse-42.2-electronics
 
@@ -40,9 +40,9 @@ function installRepositories
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  4 suse-42.2-python
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  4 suse-42.2-network
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  5 suse-42.2-building
-  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-appliances
+  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.1-appliances
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-containers
-  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.1-filesystems-ceph
+  zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-filesystems-ceph
   zypper --non-interactive --no-gpg-checks modifyrepo --priority  1 suse-42.2-electronics
 
   return 0
